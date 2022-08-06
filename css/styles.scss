@@ -1,0 +1,81 @@
+
+.row-header{
+    @include zero-margin(0px,0px);
+}
+.row-content {
+    @include zero-margin(50px,0px);
+    border-bottom: 2px ridge;
+    min-height:300px;
+}
+.footer{
+    background-color: $background-white;
+    @include zero-margin(20px, 0px);
+}
+.tab-content {
+    border-left: 2px solid $lt-gray;
+    padding: 9px;
+    border-bottom: 2px solid $lt-gray;
+    border-right: 2px solid $lt-gray;
+    
+}
+.modal-header {
+    background-color: $background-dim;
+}
+.modal-title {
+    color: floralwhite;
+}
+.close {
+    color: floralwhite;
+}
+.modal-body {
+    background-color: $background-white;
+}
+.carousel {
+    background:$background-dim;
+}
+
+.carousel-item {
+    height: $carousel-height;
+    img {
+        min-height: 200px;
+        left: 1;
+        position: absolute;
+        top: 1;
+    }
+}
+
+#carouselButton {
+    position: absolute;
+    bottom: 1px;
+    z-index: 2;
+    right:1px;
+}
+.jumbotron {
+    @include zero-margin(70px,30px);
+    color:floralwhite;
+    background: $background-bright ;
+    
+}
+address{
+    font-size:82%;
+    margin:1px;
+    
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+.navbar-dark {
+     background-color: $background-dim;
+}
+$lt-gray: #ddd;
+$background-dim: #808000;
+$background-bright: #FFFF00;
+$background-white: #CCEEFF;
+$carousel-height: 300px;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0px auto;
+	padding: $pad-up-dn $pad-left-right;
+}
+
